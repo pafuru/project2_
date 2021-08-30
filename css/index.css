@@ -1,0 +1,1088 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+a,
+p,
+ul,
+li,
+span {
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    margin: 0 0;
+    padding: 0 0;
+}
+
+@media(max-width:1920px) {
+
+    /*고정메뉴 css*/
+    .menu {
+        width: 1920px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-around;
+        z-index: 200;
+        background-color: #fff;
+        position: fixed;
+        overflow: hidden;
+        /*box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.06);*/
+    }
+
+    .logo img {
+        width: 300px;
+        float: left;
+        padding-left: 200px;
+        padding-top: 60px;
+    }
+
+    .main_menu {
+        float: right;
+        width: 1920px;
+    }
+
+    .main_menu a {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .main_menu ul {
+        width: 700px;
+        font-weight: 500;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        line-height: 600%;
+        margin-right: 0;
+        padding-right: 200px;
+        padding-top: 30px;
+    }
+
+    .color li {
+        color: #537fc6;
+        font-weight: bold;
+    }
+
+    .main_menu ul a:hover {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .main_menu ul a li:hover {
+        color: #537fc6;
+        transition: .3s;
+        list-style: none;
+        text-decoration: none;
+    }
+
+
+    /*고정메뉴 끝*/
+    
+    .contents{
+        padding-top: 200px;
+        overflow: hidden;
+        width: 1500px;
+        margin: 0 auto;
+    }
+
+
+    .main {
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        top: 250px;
+        left: 30px;
+        overflow: hidden;
+    }
+
+    #demo .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='lightgray' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    #demo .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='lightgray' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+
+    #demo .row {
+        width: 1500px;
+        height: 650px;
+        margin: 0 auto;
+    }
+
+    #demo .col con {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    #demo .col p {
+        float: left;
+        text-align: left;
+        line-height: 80px;
+        color: black;
+        font-size: 50px;
+        font-weight: bold;
+        z-index: 50;
+    }
+
+    #demo .col span {
+        font-size: 80px;
+        line-height: 100px;
+        color: #537fc6;
+        font-weight: 900;
+    }
+
+    #demo #first .col p {
+        padding-top: 100px;
+    }
+    #demo #second .col p {
+        padding-top: 200px;
+    }
+
+    #demo #thr p {
+        position: absolute;
+        top: 200px;
+        text-align: right;
+        font-size: 60px;
+    }
+
+    #demo .col img {
+        float: right;
+        z-index: 1;
+    }
+    
+    #first img{
+        width: 80%;
+        z-index: 0;
+        padding-right: 80px;
+    }
+    #second img{
+        width: 80%;
+        padding-right: 80px;
+    }
+    #thr img{
+        width: 100%;
+    }
+
+    .mini {
+        display: flex;
+        padding-top: 200px;
+        overflow: hidden;
+    }
+
+
+    .mini img {
+        height: 100%;
+        padding-left: 30px;
+        padding-top: 120px;
+    }
+
+    .first h1 {
+        font-size: 750px;
+        color: #5f91e0;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .first h3 {
+        color: #C8C8C8;
+        font-size: 160px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .text {
+        position: absolute;
+        top: 1900px;
+        width: 100%;
+    }
+
+    .text h4 {
+        font-size: 90px;
+        line-height: 150px;
+        font-weight: 900;
+        letter-spacing: 30;
+        position: absolute;
+        top: 120px;
+    }
+
+    .text p {
+        font-size: 30px;
+        line-height: 50px;
+        position: absolute;
+        top: 450px;
+    }
+
+
+
+    .content {
+        width: 1500px;
+        margin: 0 auto;
+        padding-top: 300px;
+        padding-bottom: 300px;
+        overflow: hidden;
+    }
+
+    .fix {
+        position: absolute;
+        top: 2800px;
+        text-align: left;
+        overflow: hidden;
+    }
+
+    .fix h1 p {
+        color: #537fc6;
+        font-weight: bold;
+        font-size: 38px;
+    }
+
+    .fix h1 {
+        color: #011E4B;
+        font-weight: bold;
+        font-size: 80px;
+    }
+
+    .more {
+        width: 700px;
+        display: flex;
+        padding-top: 200px;
+        margin-left: 700px;
+        overflow: hidden;
+    }
+    
+    .more .id{
+        border-left: 5px dotted rgba(62, 99, 159, 0.33);
+        padding-right: 80px;
+    }
+
+    .more ul li {
+        padding: 30px 0px;
+        float: left;
+    }
+
+    .more ul li h3 {
+        font-size: 40px;
+        text-align: left;
+        float: left;
+        font-weight: bold;
+    }
+
+    .m_text {
+        font-size: 20px;
+        margin-top: 0px;
+        float: left;
+    }
+
+    .more img {
+        width: 120px;
+        height: 120px;
+        margin-right: 20px;
+        float: left;
+    }
+
+
+
+
+
+
+
+
+
+
+    .app_intro span.carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    .app_intro .carousel-item {
+        width: 100%;
+        height: 700px;
+    }
+
+    .app_intro {
+        width: 100%;
+        margin: 0 auto;
+        height: 1000px;
+        overflow: hidden;
+    }
+
+    .img .carousel-item img {
+        width: 100%;
+    }
+    
+    
+    
+    
+    
+    
+
+
+    /*앱다운로드*/
+
+    #offcanvasTop {
+        width: 100%;
+        height: 530px;
+        text-align: center;
+    }
+
+    .offcanvas-title {
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        left: 33%;
+        top: 50px;
+        color: #537FC6;
+
+    }
+
+    .offcanvas-title p {
+        font-size: 20px;
+        font-weight: 300;
+        padding-top: 10px;
+    }
+
+    .offcanvas-body {
+        text-align: center;
+    }
+
+    .offcanvas-body img {
+        padding-bottom: 30px;
+        margin-top: 70px;
+    }
+
+    .offcanvas-footer {
+        padding-bottom: 60px;
+    }
+
+    .container {
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    #btn01 {
+        background-color: #537fc6;
+        color: white;
+        border: none;
+    }
+
+    #form {
+        width: 600px;
+        position: absolute;
+        left: 35%;
+    }
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    .app {
+        width: 1920px;
+        height: 600px;
+        background-color: #537fc6;
+        display: flex;
+    }
+    
+    .ccon{
+        width: 1500px;
+        margin: 0 auto;
+    }
+
+    .a-left {
+        vertical-align: middle;
+        width: 1920px;
+    }
+
+    .a-left h1 {
+        color: #b0cfff;
+        font-size: 80px;
+        line-height: 120px;
+        letter-spacing: -40;
+        padding-top: 100px;
+    }
+
+    .a-left button {
+        width: 340px;
+        height: 74px;
+        font-size: 33px;
+        color: #3B5D93;
+        border: none;
+        background: #fff;
+    }
+
+    .button {
+        padding-top: 80px;
+    }
+
+    .a-left button:hover {
+        background-color: #3B5D93;
+        color: white;
+        border: none;
+        transition: .5s;
+    }
+
+    .a-right img{
+        position: absolute;
+        left: 1175px;
+        top: 4734px;
+    }
+
+    footer {
+        background-color: #0A2551;
+        margin: 0 auto;
+        width: 1920px;
+        height: 250px;
+        justify-content: space-around;
+    }
+    
+    .cont{
+        width: 1500px;
+        margin: 0 auto;
+        padding-top: 50px;
+        background-image: url(../images/)
+    }
+
+    footer h6,
+    footer p,
+    footer span {
+        color: white;
+    }
+
+    footer li,
+    footer a {
+        color: #537FC6;
+    }
+
+    footer a:hover {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+    }
+
+    footer .left {
+        float: left;
+        width: 55%;
+        height: 100%;
+        padding-top: 0px;
+    }
+
+    footer .left h6 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    footer .left span {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    footer .left p,
+    .left span {
+        font-size: 12px;
+    }
+
+    footer .cont .right {
+        float: right;
+        width: 35%;
+        height: 100%;
+        line-height: 20px;
+        text-align: right;
+    }
+
+    footer .right h6 {
+        font-size: 21px;
+        line-height: 31px;
+        text-align: right;
+    }
+
+    footer .right span {
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 41px;
+    }
+
+    footer .right p {
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    address ul li {
+        color: #537FC6;
+        float: right;
+        padding: 0px 0px 0px 20px;
+        font-size: 12px;
+    }
+    
+    address ul li a{
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    address {
+        text-align: right;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1600px) {
+
+    /*고정메뉴 css*/
+    .menu {
+        width: 1600px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-around;
+        z-index: 200;
+        background-color: #fff;
+        position: fixed;
+        overflow: hidden;
+        /*box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.06);*/
+    }
+
+    .logo img {
+        width: 300px;
+        float: left;
+        padding-left: 200px;
+        padding-top: 60px;
+    }
+
+    .main_menu {
+        float: right;
+        width: 1300px;
+    }
+
+    .main_menu a {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .main_menu ul {
+        width: 700px;
+        font-weight: 500;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        line-height: 600%;
+        margin-right: 0;
+        padding-right: 250px;
+        padding-top: 30px;
+    }
+
+    .color li {
+        color: #537fc6;
+        font-weight: bold;
+    }
+
+    .main_menu ul a:hover {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .main_menu ul a li:hover {
+        color: #537fc6;
+        transition: .3s;
+        list-style: none;
+        text-decoration: none;
+    }
+
+
+    /*고정메뉴 끝*/
+    
+    .contents{
+        padding-top: 200px;
+        overflow: hidden;
+        width: 1120px;
+        margin: 0 auto;
+    }
+
+
+    .main {
+        margin: 0 auto;
+        width: 1120px;
+        position: relative;
+        top: 150px;
+        left: 30px;
+        overflow: hidden;
+    }
+
+    #demo .carousel-control-prev-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='lightgray' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    #demo .carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='lightgray' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+
+    #demo .row {
+        width: 1120px;
+        height: 650px;
+        margin: 0 auto;
+    }
+
+    #demo .col con {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        align-content: center;
+        justify-content: space-around;
+    }
+
+    #demo .col p {
+        float: left;
+        text-align: left;
+        line-height: 80px;
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+        z-index: 50;
+    }
+
+    #demo .col span {
+        font-size: 60px;
+        line-height: 100px;
+        color: #537fc6;
+        font-weight: 900;
+    }
+
+    #demo #first .col p {
+        padding-top: 100px;
+    }
+    #demo #second .col p {
+        padding-top: 200px;
+    }
+
+    #demo #thr p {
+        position: absolute;
+        top: 200px;
+        text-align: right;
+        font-size: 60px;
+    }
+
+    #demo .col img {
+        float: right;
+        z-index: 1;
+    }
+    
+    #first img{
+        width: 90%;
+        z-index: 0;
+        padding-right: 80px;
+    }
+    
+    #second img{
+        width: 90%;
+        padding-right: 80px;
+    }
+    #thr img{
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    .mini {
+        display: flex;
+        padding-top: 200px;
+        overflow: hidden;
+    }
+
+
+    .mini img {
+        height: 100%;
+        padding-left: 30px;
+        padding-top: 70px;
+    }
+
+    .first h1 {
+        font-size: 560px;
+        color: #5f91e0;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .first h3 {
+        color: #C8C8C8;
+        font-size: 120px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .text {
+        position: absolute;
+        top: 1900px;
+        width: 100%;
+    }
+
+    .text h4 {
+        font-size: 60px;
+        line-height: 80px;
+        font-weight: 900;
+        letter-spacing: 30;
+        position: absolute;
+        top: 0px;
+    }
+
+    .text p {
+        font-size: 25px;
+        line-height: 40px;
+        position: absolute;
+        top: 200px;
+    }
+
+
+
+    .content {
+        width: 1120px;
+        margin: 0 auto;
+        padding-top: 300px;
+        padding-bottom: 300px;
+        overflow: hidden;
+    }
+
+    .fix {
+        position: absolute;
+        top: 2500px;
+        text-align: left;
+        overflow: hidden;
+    }
+
+    .fix h1 p {
+        color: #537fc6;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .fix h1 {
+        color: #011E4B;
+        font-weight: bold;
+        font-size: 50px;
+    }
+
+    .more {
+        width: 600px;
+        display: flex;
+        padding-top: 200px;
+        margin-left: 500px;
+        overflow: hidden;
+    }
+    
+    .more .id{
+        border-left: 5px dotted rgba(62, 99, 159, 0.33);
+        padding-right: 100px;
+    }
+
+    .more ul li {
+        padding: 30px 0px;
+        float: left;
+    }
+
+    .more ul li h3 {
+        font-size: 30px;
+        text-align: left;
+        float: left;
+        font-weight: bold;
+    }
+
+    .m_text {
+        font-size: 15px;
+        margin-top: 0px;
+        float: left;
+    }
+
+    .more img {
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+        float: left;
+    }
+
+
+
+
+
+
+
+
+
+
+    .app_intro span.carousel-control-next-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+    .app_intro .carousel-item {
+        width: 100%;
+        height: 700px;
+    }
+
+    .app_intro {
+        width: 100%;
+        margin: 0 auto;
+        height: 1000px;
+        overflow: hidden;
+    }
+
+    .img .carousel-item img {
+        width: 100%;
+    }
+
+
+
+
+    /*앱다운로드*/
+
+    #offcanvasTop {
+        width: 100%;
+        height: 550px;
+        text-align: center;
+    }
+    .offcanvas-title {
+        font-size: 30px;
+        font-weight: bold;
+        position: absolute;
+        left: 30%;
+        top: 50px;
+        color: #537FC6;
+
+    }
+
+    .offcanvas-title p {
+        font-size: 20px;
+        font-weight: 300;
+        padding-top: 10px;
+    }
+
+    .offcanvas-body {
+        text-align: center;
+    }
+
+    .offcanvas-body img {
+        padding-bottom: 30px;
+        margin-top: 70px;
+    }
+
+    .offcanvas-footer {
+        padding-bottom: 60px;
+    }
+
+    .container {
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    #btn01 {
+        background-color: #537fc6;
+        color: white;
+        border: none;
+    }
+
+    #form {
+        width: 600px;
+        position: absolute;
+        left: 30%;
+    }
+
+
+
+
+    
+    
+    
+    
+    
+
+    .app {
+        width: 100%;
+        height: 400px;
+        background-color: #537fc6;
+        display: flex;
+    }
+    
+    .ccon{
+        width: 1120px;
+        margin: 0 auto;
+    }
+
+    .a-left {
+        vertical-align: middle;
+        width: 1120px;
+        padding-left: 0px;
+    }
+
+    .a-left h1 {
+        color: #b0cfff;
+        font-size: 60px;
+        line-height: 80px;
+        letter-spacing: -40;
+        padding-top: 100px;
+    }
+
+    .a-left button {
+        width: 250px;
+        height: 60px;
+        font-size: 25px;
+        color: #3B5D93;
+        border: none;
+        background: #fff;
+    }
+
+    .button {
+        padding-top: 20px;
+    }
+
+    .a-left button:hover {
+        background-color: #3B5D93;
+        color: white;
+        border: none;
+        transition: .5s;
+    }
+
+    .a-right img{
+        position: absolute;
+        left: 940px;
+        top: 4324px;
+        width: 25%;
+    }
+
+    footer {
+        background-color: #0A2551;
+        margin: 0 auto;
+        width: 100%;
+        height: 250px;
+        justify-content: space-around;
+    }
+    
+    .cont{
+        width: 1120px;
+        margin: 0 auto;
+        padding-top: 50px;
+        background-image: url(../images/)
+    }
+
+    footer h6,
+    footer p,
+    footer span {
+        color: white;
+    }
+
+    footer li,
+    footer a {
+        color: #537FC6;
+    }
+
+    footer a:hover {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+    }
+
+    footer .left {
+        float: left;
+        width: 55%;
+        height: 100%;
+        padding-top: 0px;
+    }
+
+    footer .left h6 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    footer .left span {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    footer .left p,
+    .left span {
+        font-size: 12px;
+    }
+
+    footer .cont .right {
+        float: right;
+        width: 35%;
+        height: 100%;
+        line-height: 20px;
+        text-align: right;
+    }
+
+    footer .right h6 {
+        font-size: 21px;
+        line-height: 31px;
+        text-align: right;
+    }
+
+    footer .right span {
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 41px;
+    }
+
+    footer .right p {
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    address ul li {
+        color: #537FC6;
+        float: right;
+        padding: 0px 0px 0px 20px;
+        font-size: 12px;
+    }
+    
+    address ul li a{
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    address {
+        text-align: right;
+    }
+}

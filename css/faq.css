@@ -1,0 +1,574 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+a,
+p,
+ul,
+li,
+span {
+    text-decoration: none;
+    list-style: none;
+}
+
+@media(max-width:1920px) {
+    /*고정메뉴 css*/
+    .menu {
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-around;
+        z-index: 200;
+        background-color: #fff;
+        position: fixed;
+        /*box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.06);*/
+    }
+
+    .logo img {
+        width: 300px;
+        float: left;
+        padding-left: 200px;
+        padding-top: 60px;
+    }
+
+    .main_menu {
+        float: right;
+        width: 100%;
+    }
+
+    .main_menu a {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .main_menu ul {
+        width: 700px;
+        font-weight: 500;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        line-height: 600%;
+        margin-right: 0;
+        padding-right: 200px;
+        padding-top: 30px;
+    }
+
+    .color li {
+        color: #537fc6;
+        font-weight: bold;
+    }
+
+    .main_menu ul a:hover {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .main_menu ul a li:hover {
+        color: #537fc6;
+        transition: .3s;
+        list-style: none;
+        text-decoration: none;
+    }
+
+
+    /*고정메뉴 끝*/
+
+
+    .main {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 350px;
+    }
+
+    .main h1 {
+        font-size: 117px;
+        font-weight: 900;
+        line-height: 173px;
+        text-align: center;
+    }
+
+    .main span {
+        color: #537fc6;
+        text-decoration-line: none;
+    }
+
+    .main .btn {
+        width: 300px;
+        height: 60px;
+        font-size: 25px;
+        font-weight: 500;
+        color: #3C5CA6;
+        background-color: #fff;
+        box-shadow: 0 3px 5px;
+        margin-top: 50px;
+        line-height: 180%;
+        margin-left: 42%;
+    }
+
+    .main .btn:hover {
+        background-color: #537fc6;
+        box-shadow: none;
+        color: #fff;
+        transition: .3s;
+    }
+    
+
+    .main p {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 30px;
+    }
+
+    .faq_head {
+        box-shadow: 0 3px 3px rgba(206, 206, 206, 0.92);
+        margin-top: 300px;
+    }
+
+    .faq_head h6 {
+        color: #fff;
+        width: 100%;
+        height: 141px;
+        background-color: #537fc6;
+        line-height: 140px;
+        font-size: 30px;
+        padding-left: 200px;
+    }
+
+    .faq {
+        width: 1500px;
+        margin: 0 auto;
+    }
+
+    .faq h2 {
+        width: 100%;
+        text-align: left;
+        font-size: 28px;
+    }
+
+    .faq p {
+        position: absolute;
+        right: 80px;
+        color: #537fc6;
+        margin-top: 15px;
+    }
+
+    .pagination {
+        text-align: center;
+    }
+
+    .faq nav {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .faq span {
+        color: #537fc6;
+        font-weight: 500;
+    }
+
+    .accordion-body {
+        padding: 50px 20px;
+    }
+    .accordion-body a{
+        color: #537fc6;
+    }
+
+    .pagination {
+        padding: 40px 0px;
+    }
+
+    .page-item a,
+    a.page-link span {
+        color: #585858;
+    }
+
+
+    footer {
+        background-color: #0A2551;
+        margin: 0 auto;
+        width: 100%;
+        height: 250px;
+        justify-content: space-around;
+    }
+    
+    .cont{
+        width: 1500px;
+        margin: 0 auto;
+        padding-top: 50px;
+        background-image: url(../images/)
+    }
+
+    footer h6,
+    footer p,
+    footer span {
+        color: white;
+    }
+
+    footer li,
+    footer a {
+        color: #537FC6;
+    }
+
+    footer a:hover {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+    }
+
+    footer .left {
+        float: left;
+        width: 55%;
+        height: 100%;
+        padding-top: 0px;
+    }
+
+    footer .left h6 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    footer .left span {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    footer .left p,
+    .left span {
+        font-size: 12px;
+    }
+
+    footer .cont .right {
+        float: right;
+        width: 35%;
+        height: 100%;
+        line-height: 20px;
+        text-align: right;
+    }
+
+    footer .right h6 {
+        font-size: 21px;
+        line-height: 31px;
+        text-align: right;
+    }
+
+    footer .right span {
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 41px;
+    }
+
+    footer .right p {
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    address ul li {
+        color: #537FC6;
+        float: right;
+        padding: 0px 0px 0px 20px;
+        font-size: 12px;
+    }
+    
+    address ul li a{
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    address {
+        text-align: right;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1600px) {
+
+   /*고정메뉴 css*/
+    .menu {
+        width: 1600px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-around;
+        z-index: 200;
+        background-color: #fff;
+        position: fixed;
+        overflow: hidden;
+        /*box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.06);*/
+    }
+
+    .logo img {
+        width: 300px;
+        float: left;
+        padding-left: 200px;
+        padding-top: 60px;
+    }
+
+    .main_menu {
+        float: right;
+        width: 1300px;
+    }
+
+    .main_menu a {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .main_menu ul {
+        width: 700px;
+        font-weight: 500;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        line-height: 600%;
+        margin-right: 0;
+        padding-right: 250px;
+        padding-top: 30px;
+    }
+
+    .color li {
+        color: #537fc6;
+        font-weight: bold;
+    }
+
+    .main_menu ul a:hover {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .main_menu ul a li:hover {
+        color: #537fc6;
+        transition: .3s;
+        list-style: none;
+        text-decoration: none;
+    }
+
+
+    /*고정메뉴 끝*/
+
+    .main {
+        width: 1120px;
+        margin: 0 auto;
+        padding-top: 230px;
+    }
+
+    .main h1 {
+        font-size: 100px;
+        font-weight: 900;
+        line-height: 173px;
+        text-align: center;
+    }
+
+    .main span {
+        color: #537fc6;
+        text-decoration-line: none;
+    }
+
+    .main .btn {
+        width: 300px;
+        height: 60px;
+        font-size: 25px;
+        font-weight: 500;
+        color: #3C5CA6;
+        background-color: #fff;
+        box-shadow: 0 3px 5px;
+        margin-top: 30px;
+        line-height: 180%;
+        margin-left: 37%;
+    }
+
+    .main .btn:hover {
+        background-color: #537fc6;
+        box-shadow: none;
+        color: #fff;
+        transition: .3s;
+    }
+    
+
+    .main p {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 30px;
+    }
+
+    .faq_head {
+        box-shadow: 0 3px 3px rgba(206, 206, 206, 0.92);
+        margin-top: 300px;
+    }
+
+    .faq_head h6 {
+        color: #fff;
+        width: 100%;
+        height: 100px;
+        background-color: #537fc6;
+        line-height: 100px;
+        font-size: 30px;
+        padding-left: 200px;
+    }
+
+    .faq {
+        width: 1120px;
+        margin: 0 auto;
+    }
+
+    .faq h2 {
+        width: 1120px;
+        text-align: left;
+        font-size: 28px;
+    }
+
+    .faq p {
+        position: absolute;
+        right: 80px;
+        color: #537fc6;
+        margin-top: 15px;
+    }
+
+    .pagination {
+        text-align: center;
+    }
+
+    .faq nav {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .faq span {
+        color: #537fc6;
+        font-weight: 500;
+    }
+
+    .accordion-body {
+        padding: 50px 20px;
+    }
+    .accordion-body a{
+        color: #537fc6;
+    }
+
+    .pagination {
+        padding: 40px 0px;
+    }
+
+    .page-item a,
+    a.page-link span {
+        color: #585858;
+    }
+
+
+    footer {
+        background-color: #0A2551;
+        margin: 0 auto;
+        width: 100%;
+        height: 250px;
+        justify-content: space-around;
+    }
+    
+    .cont{
+        width: 1120px;
+        margin: 0 auto;
+        padding-top: 50px;
+        background-image: url(../images/)
+    }
+
+    footer h6,
+    footer p,
+    footer span {
+        color: white;
+    }
+
+    footer li,
+    footer a {
+        color: #537FC6;
+    }
+
+    footer a:hover {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+    }
+
+    footer .left {
+        float: left;
+        width: 55%;
+        height: 100%;
+        padding-top: 0px;
+    }
+
+    footer .left h6 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    footer .left span {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    footer .left p,
+    .left span {
+        font-size: 12px;
+    }
+
+    footer .cont .right {
+        float: right;
+        width: 35%;
+        height: 100%;
+        line-height: 20px;
+        text-align: right;
+    }
+
+    footer .right h6 {
+        font-size: 21px;
+        line-height: 31px;
+        text-align: right;
+    }
+
+    footer .right span {
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 41px;
+    }
+
+    footer .right p {
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    address ul li {
+        color: #537FC6;
+        float: right;
+        padding: 0px 0px 0px 20px;
+        font-size: 12px;
+    }
+    
+    address ul li a{
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    address {
+        text-align: right;
+    }
+}
